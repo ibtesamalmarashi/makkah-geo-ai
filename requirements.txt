@@ -1,0 +1,29 @@
+# --- Web Framework & Server ---
+fastapi==0.109.0
+uvicorn==0.27.0
+python-multipart==0.0.6
+
+# --- Database & GIS ---
+sqlalchemy[asyncio]==2.0.25
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+geoalchemy2==0.14.3
+shapely==2.0.2
+
+# --- AI & LLM ---
+langchain==0.1.0
+langchain-openai==0.0.2
+openai==1.10.0
+# إذا كنتِ تستخدمين Ollama محلياً لـ Qwen2.5
+langchain-community==0.0.10
+
+# --- Data Processing ---
+pandas==2.2.0
+numpy==1.26.3
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# --- Utilities ---
+python-dotenv==1.0.0
+httpx==0.26.0
+jinja2==3.1.3
