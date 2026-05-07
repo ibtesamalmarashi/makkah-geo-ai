@@ -45,56 +45,120 @@ The system supports key spatial layers in the Makkah Region:
 | **الخدمات_الصحية** | Hospitals and healthcare centers |
 
 ---
+---
 # ⚙️ Installation & Setup
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/ibtesamalmarashi/makkah-geo-ai.git](https://github.com/ibtesamalmarashi/makkah-geo-ai.git)
-cd makkah-geo-ai
+## 1. Clone the Repository
 
-  2. Backend Setup
-Create Virtual Environment:
-# Windows
+```bash
+git clone https://github.com/ibtesamalmarashi/makkah-geo-ai.git
+cd makkah-geo-ai
+```
+
+---
+
+# 🐍 Backend Setup
+
+## Create Virtual Environment
+
+### Windows
+
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-# Linux / macOS
+### Linux / macOS
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
-Install Dependencies:
+---
+
+## Install Dependencies
+
+```bash
 cd backend
 pip install -r requirements.txt
+```
 
-  3. AI / Ollama Setup 
-  
-Download and install Ollama.
+---
 
-Pull the required model:
+# 🧠 AI / Ollama Setup
+
+Download and install Ollama from:
+
+https://ollama.com
+
+---
+
+## Pull the Required Model
+
+```bash
 ollama pull qwen2.5:7b
-ollama serve
+```
 
- 4. Database Setup
+---
+
+## Start Ollama
+
+```bash
+ollama serve
+```
+
+---
+
+# 🗄️ Database Setup
+
 Ensure PostgreSQL and PostGIS are installed.
 
-Create the database:
+---
+
+## Create Database
+
+```sql
 CREATE DATABASE makkah_gis;
+```
+
+---
+
+## Connect to Database
+
+```sql
 \c makkah_gis;
+```
+
+---
+
+## Enable PostGIS Extension
+
+```sql
 CREATE EXTENSION postgis;
+```
 
-📡 API Endpoints
+---
 
-Endpoint,Method,Description
-/query,POST,Process Arabic NL query
-/health,GET,Health check endpoint
-/layers,GET,Retrieve available GIS layers
+# 📡 API Endpoints
 
-🤝 Acknowledgments
-I would like to express my sincere gratitude to the Makkah Region Development Authority for providing a professional environment during my Co-op training.
+| Endpoint | Method | Description |
+|----------|---------|-------------|
+| `/query` | POST | Process Arabic natural language query |
+| `/health` | GET | Health check endpoint |
+| `/layers` | GET | Retrieve available GIS layers |
+
+---
+
+# 🤝 Acknowledgments
+
+I would like to express my sincere gratitude to the Makkah Region Development Authority for providing a professional and inspiring environment during my Co-op training.
 
 Special thanks to my supervisor, Ali Alamri, for his invaluable mentorship, technical guidance, and continuous support throughout the development of this project.
 
-👩‍💻 Author
-Ibtesam Almarashi
+---
 
+# 👩‍💻 Author
+
+**Ibtesam Almarashi**  
 Geospatial Data Scientist & Software Developer
