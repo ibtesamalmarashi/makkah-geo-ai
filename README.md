@@ -48,7 +48,7 @@ The system supports key spatial layers in the Makkah Region:
 
 # ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+1. Clone the Repository
 ```bash
 git clone https://github.com/ibtesamalmarashi/makkah-geo-ai.git
 cd makkah-geo-ai
