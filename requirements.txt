@@ -14,7 +14,7 @@ shapely==2.0.2
 langchain==0.1.0
 langchain-openai==0.0.2
 openai==1.10.0
-# إذا كنتِ تستخدمين Ollama محلياً لـ Qwen2.5
+#    Ollama محلياً لـ Qwen2.5
 langchain-community==0.0.10
 
 # --- Data Processing ---
