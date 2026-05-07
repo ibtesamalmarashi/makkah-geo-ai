@@ -119,7 +119,7 @@ Ensure PostgreSQL and PostGIS are installed.
 ## Create Database
 
 ```sql
-CREATE DATABASE makkah_gis;
+CREATE DATABASE MPDA;
 ```
 
 ---
@@ -127,7 +127,7 @@ CREATE DATABASE makkah_gis;
 ## Connect to Database
 
 ```sql
-\c makkah_gis;
+\c MPDA;
 ```
 
 ---
