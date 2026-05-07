@@ -45,12 +45,11 @@ The system supports key spatial layers in the Makkah Region:
 | **الخدمات_الصحية** | Hospitals and healthcare centers |
 
 ---
-
 # ⚙️ Installation & Setup
 
-1. Clone the Repository
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/ibtesamalmarashi/makkah-geo-ai.git
+git clone [https://github.com/ibtesamalmarashi/makkah-geo-ai.git](https://github.com/ibtesamalmarashi/makkah-geo-ai.git)
 cd makkah-geo-ai
 
 2. Backend Setup
