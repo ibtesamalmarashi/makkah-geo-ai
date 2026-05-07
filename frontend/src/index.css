@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+:root {
+  /* Makkah Authority Colors - Dark Green Theme */
+  --bg-dark-green: #003B38;
+  --bg-mid-green: #FFFFFF; /* Beige/Grey White instead of Black */
+  --accent-gold: #C39A6C;
+  --accent-gold-light: #C4A46F;
+  --text-white: #FFFFFF;
+  --bg-footer-white: #FFFFFF;
+  --text-dark-grey: #2D3E4E;
+  --text-light-green: #005C57;
+  
+  --bg-color: var(--bg-mid-green);
+  --panel-bg: rgba(0, 59, 56, 0.8); /* Dark green with opacity for glass */
+  --panel-border: rgba(195, 154, 108, 0.4); /* Gold border with opacity */
+  --text-primary: var(--text-white);
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --font-family: 'Tajawal', system-ui, sans-serif;
+  --grad-accent: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { background-color: var(--bg-color); color: var(--text-primary); font-family: var(--font-family); overflow: hidden; direction: rtl; }
+
+.glass { background: var(--panel-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--panel-border); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); }
+
+.gold-text { background: var(--grad-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 15px rgba(195, 154, 108, 0.2); }
+
+.app-container { display: flex; height: 100vh; width: 100vw; position: relative; }
+
+.chat-sidebar { width: 450px; height: 100%; display: flex; flex-direction: column; z-index: 1000; border-left: 1.5px solid var(--accent-gold); background-color: var(--bg-dark-green); }
+
+.map-container { flex: 1; height: 100%; background: var(--bg-mid-green); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent-gold); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-gold-light); }
+
+.header-banner { background-color: var(--bg-dark-green); border-bottom: 2px solid var(--accent-gold); }
