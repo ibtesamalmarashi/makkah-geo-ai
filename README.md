@@ -52,7 +52,7 @@ The system supports key spatial layers in the Makkah Region:
 git clone [https://github.com/ibtesamalmarashi/makkah-geo-ai.git](https://github.com/ibtesamalmarashi/makkah-geo-ai.git)
 cd makkah-geo-ai
 
-2. Backend Setup
+  2. Backend Setup
 Create Virtual Environment:
 # Windows
 python -m venv venv
@@ -66,7 +66,7 @@ Install Dependencies:
 cd backend
 pip install -r requirements.txt
 
-3. AI / Ollama Setup 
+  3. AI / Ollama Setup 
   
 Download and install Ollama.
 
@@ -74,7 +74,7 @@ Pull the required model:
 ollama pull qwen2.5:7b
 ollama serve
 
-4. Database Setup
+ 4. Database Setup
 Ensure PostgreSQL and PostGIS are installed.
 
 Create the database:
